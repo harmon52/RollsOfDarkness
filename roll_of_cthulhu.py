@@ -187,7 +187,7 @@ async def on_message(message):
         elif command.startswith('/c chargen'):
             stats3 = ["STR", "CON", "DEX", "APP", "POW"]
             stats2 = ["SIZ", "INT", "EDU"]
-            msg = "";
+            msg = ""
             await message.channel.send(message.author.mention + ': Rolling stats (before aging)')
             for stat in stats3:
                 d1, d2, d3 = roll_3d6()
